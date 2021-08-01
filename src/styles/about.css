@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+/* Sidebar */
+
+.content-sidebar {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 150vh;
+}
+
+img {
+    padding: 25px;
+    width: 200px;
+    height: 200px;
+}
+
+.contact {
+    padding-left: 30px;
+    list-style: none;
+}
+
+.sidebar ul {
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
+.sidebar li {
+    padding-bottom: 10px;
+}
+
+.sidebar .list-title {
+    font-weight: bold;
+}
+
+
+/* Middle of page items */
+ul, li {
+    list-style-type: none;
+}
+
+.content-contents {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+dd {
+    padding-bottom: 30px;
+    text-indent: 25px;
+}
+
+.list-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.re-title {
+    text-indent: 25px;
+    font-weight:bolder;
+}

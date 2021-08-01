@@ -1,0 +1,17 @@
+* {
+    cursor: none;
+    font-family: 'Padauk', sans-serif;
+}
+
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+    border-radius: 9px;
+    z-index: 999;
+    mix-blend-mode: difference;
+    box-shadow: 2px 2px 4px #000000;
+}
