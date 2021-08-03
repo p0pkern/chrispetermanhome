@@ -1,32 +1,49 @@
 import React from "react"
-import "../../styles/projectitem.css"
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai"
 
-const ProjectItem = ({ color, number, title, image, alt, description, lang1, lang2, lang3 }) => {
-        let colorOne = "red";
-        let colorTwo = "blue";
-        let colorText = "white";
+const ProjectItem = ({ color, number, title, image, alt, description, lang1, lang2, lang3, github, demo }) => {
+        let colorOne = "DDBC95";
+        let colorTwo = "B38867";
     // Hover Home
     if (color === "#626D71") {
         colorOne = "#626D71";
         colorTwo = "#CDCDCD";
-        colorText = "white";
+
+    // Hover Projects
     } else if (color === "#DDBC95") {
         colorOne = "#DDBC95";
         colorTwo = "#B38867";
-        colorText = "white";
+
+    // Hover About
     } else if (color === "#B38867") {
         colorOne = "#B38867";
         colorTwo = "#DDBC95";
-        colorText = "white";
     }
 
     return (
-       <div style={{backgroundColor: number % 2 == 0 ? colorOne: colorTwo}}>
+       <div className="proj-container" style={{backgroundColor: number % 2 === 0 ? colorOne: colorTwo}}>
         <li>
-            <h3 className="item-title">{title}</h3>
+            <div className="top-portion">
+                <h3 className="item-title">{title}</h3>
+
+                <div className="icons-container">
+                    <div className="icons-titles">
+                        <p>Github</p>
+                        <p>Demo</p>
+                    </div>
+                    <div className="icons">
+                        <a target="_blank" href={github}><AiFillGithub /></a>
+                        <a target="_blank" href={demo}><AiOutlineLink /></a>
+                    </div>
+                </div>
+
+            </div>
             <div className="image-desc">
-                <img src={image} alt={alt}></img>
-                <p>{description}</p>
+                <img className="project-img" src={image} alt={alt}></img>
+                <div className="project-desc">
+                    <h4>About</h4>
+                    <p>{description}</p>
+                </div>
                 <div className="languages-used">
                     <div className="languages-used-title">
                         <h4>Languages Used</h4>

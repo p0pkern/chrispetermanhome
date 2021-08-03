@@ -83,15 +83,15 @@
 }
 
 /* Footer Styling */
-div footer {
+.footer-style {
     position: fixed;
     bottom: 0;
     width: 100%;
     margin: 0;
     margin-top: 100;
     padding: 20px;
+    background-color: #626D71;
     padding-bottom: 110px;
-	background-color: "626D71";
 	box-shadow: 0 -2px 4px black;
 }
 

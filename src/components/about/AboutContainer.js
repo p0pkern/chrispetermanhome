@@ -1,7 +1,7 @@
 import React from "react"
 import Sidebar from "../about/Sidebar"
 import Content from "./Content"
-import "../../styles/about.css"
+// import "../../styles/about.css"
 
 const AboutContainer = ({ color }) => {
 

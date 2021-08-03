@@ -1,11 +1,11 @@
 import React from "react"
 
-const Shape = () => {
-    const backgroundColorList = ["626D71", "#DDBC95", "#CDCDCD", "#B38867"]
-    const size = Math.floor(Math.random() * 100)
+const Shape = ({keyValue}) => {
+    const backgroundColorList = ["#626D71", "#DDBC95", "#B38867"]
+    const size = Math.floor(Math.random() * 100 + 10)
 
     const styleRandom = {
-        left : `${Math.floor(Math.random() * 100)}%`,
+        left : `${Math.floor(Math.random() * 200)}%`,
         width : size,
         height : size,
         animationDelay: `${Math.floor(Math.random() * 3)}s`,
@@ -15,7 +15,7 @@ const Shape = () => {
     }
 
     return (
-        <li style={styleRandom}></li>
+        <li key={keyValue} style={styleRandom}></li>
     )
 }
 

@@ -9,6 +9,9 @@ import {
 
 // App page style
 import "./styles/app.css"
+import "./styles/about.css"
+import "./styles/home.css"
+import "./styles/projects.css"
 
 // Home Page Route Components
 import HomeContainer from "./components/home/HomeContainer"
@@ -25,50 +28,52 @@ import Navbar from "./components/Navbar"
 function App() {
   const [color, setColor] = useState("626D71")
 
-    const handleColorChange = (id) => {
-        if (id === "btn-one") {
-        setColor("#626D71");
-        } else if (id === "btn-two") {
-        setColor("#DDBC95");
-        } else if (id === "btn-three") {
-        setColor("#B38867");
-        } 
-    }
-  
-    const cursorX = useMotionValue(-100)
-    const cursorY = useMotionValue(-100)
+  const handleColorChange = (id) => {
+      if (id === "btn-one") {
+      setColor("#626D71");
+      } else if (id === "btn-two") {
+      setColor("#DDBC95");
+      } else if (id === "btn-three") {
+      setColor("#B38867");
+      } 
+  }
     
-    const springConfig = {damping: 50, stiffness: 400};
-    const cursorXSpring = useSpring(cursorX, springConfig);
-    const cursorYSpring = useSpring(cursorY, springConfig);
+  // Cursor animation
+  const cursorX = useMotionValue(-100)
+  const cursorY = useMotionValue(-100)
+  
+  const springConfig = {damping: 50, stiffness: 400};
+  const cursorXSpring = useSpring(cursorX, springConfig);
+  const cursorYSpring = useSpring(cursorY, springConfig);
 
-    useEffect(() => {
-      const moveCursor = (e) => {
-        cursorX.set(e.clientX - 9)
-        cursorY.set(e.clientY - 9)
-      }
-      window.addEventListener('mousemove', moveCursor)
-      return () => {
-        window.removeEventListener('mousemove', moveCursor)
-      }
-    }, [])
+  useEffect(() => {
+    const moveCursor = (e) => {
+      cursorX.set(e.clientX - 9)
+      cursorY.set(e.clientY - 9)
+    }
+    window.addEventListener('mousemove', moveCursor)
+    return () => {
+      window.removeEventListener('mousemove', moveCursor)
+    }
+  }, [cursorX, cursorY])
 
-  return (
+   return (
     <Router>
       <div>
-        <Navbar color={color} changeColor={handleColorChange} />
-        <motion.div className="cursor" style={{translateX: cursorXSpring, translateY: cursorYSpring,
-                                        backgroundColor: "white"}}/>
+          <motion.div className="cursor" style={{translateX: cursorXSpring, translateY: cursorYSpring,
+                                      backgroundColor: "white"}}/>
         <Switch>
           <Route path="/about">
-            <About color={color}/>
+            <Navbar color={color} changeColor={handleColorChange} />
+            <About color={color} />
           </Route>
           <Route path="/projects">
-            <Projects color={color}/>
+            <Navbar color={color} changeColor={handleColorChange} />
+            <Projects color={color} />
           </Route>
           <Route path="/">
-            <Home color={color}/>
-            
+            <Navbar color={color} changeColor={handleColorChange} />
+            <Home color={color} />
           </Route>
         </Switch>
         </div>

@@ -2,7 +2,7 @@ import React from "react"
 import Header from "./Header"
 import Footer from "./Footer"
 import Shapes from "./Shapes"
-import "../../styles/home.css"
+// import "../../styles/home.css"
 
 const HomeContainer = ({ color }) => {
 

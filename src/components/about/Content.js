@@ -18,8 +18,6 @@ const Content = () => {
                 <dt className="list-title">Relevant Experience</dt>
                     <dt className="re-title">Oregon State University - Teaching Assistant: January 2021 - Current</dt>
                         <dd>Assisted with helping instructors in web development course.</dd>
-                    <dt className="re-title">STS Staffing - Admin: January 2018 - June 2021</dt>
-                        <dd>Handled the administrative.</dd> 
                 <dt className="list-title">Languages</dt>
                     <dd>
                         <ul>

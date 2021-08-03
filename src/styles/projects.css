@@ -1,0 +1,85 @@
+.proj-container {
+    margin-top: 10px;
+    border-bottom: 0px;
+    z-index: 3;
+}
+
+.proj-container p {
+    font-size: 1.2rem;
+}
+
+.item-title {
+    text-align: left;
+    font-size: 3rem;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-titles {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+.icons-titles p {
+    padding-right: 40px;
+}
+
+.icons svg{
+    width: 50px;
+    height: 50px;
+    padding: 0 20px;
+    color: black;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons svg:hover {
+    color: white;
+}
+
+.top-portion {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-desc {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-img {
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 300px;
+    border: 5px solid black;
+    height: auto;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.project-desc {
+    padding-left: 2%;
+    width: 40%;
+}
+
+.project-desc h4 {
+    font-size: 1.5rem;
+}
+
+.languages-used-title {
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+.languages-used {
+    width: 30%;
+    padding-left: 2%;
+}
