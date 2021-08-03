@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chrispetermanhome/static/css/main.af5c19bc.chunk.css",
+    "main.css": "/chrispetermanhome/static/css/main.971cb225.chunk.css",
     "main.js": "/chrispetermanhome/static/js/main.ca9ccac4.chunk.js",
     "main.js.map": "/chrispetermanhome/static/js/main.ca9ccac4.chunk.js.map",
     "runtime-main.js": "/chrispetermanhome/static/js/runtime-main.b1c42b2f.js",
@@ -8,7 +8,7 @@
     "static/js/2.522c4dda.chunk.js": "/chrispetermanhome/static/js/2.522c4dda.chunk.js",
     "static/js/2.522c4dda.chunk.js.map": "/chrispetermanhome/static/js/2.522c4dda.chunk.js.map",
     "index.html": "/chrispetermanhome/index.html",
-    "static/css/main.af5c19bc.chunk.css.map": "/chrispetermanhome/static/css/main.af5c19bc.chunk.css.map",
+    "static/css/main.971cb225.chunk.css.map": "/chrispetermanhome/static/css/main.971cb225.chunk.css.map",
     "static/js/2.522c4dda.chunk.js.LICENSE.txt": "/chrispetermanhome/static/js/2.522c4dda.chunk.js.LICENSE.txt",
     "static/media/homepagegif.15580332.gif": "/chrispetermanhome/static/media/homepagegif.15580332.gif",
     "static/media/me.2694dc56.jpg": "/chrispetermanhome/static/media/me.2694dc56.jpg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.b1c42b2f.js",
     "static/js/2.522c4dda.chunk.js",
-    "static/css/main.af5c19bc.chunk.css",
+    "static/css/main.971cb225.chunk.css",
     "static/js/main.ca9ccac4.chunk.js"
   ]
 }
