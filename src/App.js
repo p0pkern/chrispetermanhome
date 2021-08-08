@@ -63,15 +63,15 @@ function App() {
           <motion.div className="cursor" style={{translateX: cursorXSpring, translateY: cursorYSpring,
                                       backgroundColor: "white"}}/>
         <Switch>
-          <Route path="/about">
+          <Route path="/chrispetermanhome/about">
             <Navbar color={color} changeColor={handleColorChange} />
             <About color={color} />
           </Route>
-          <Route path="/projects">
+          <Route path="/chrispetermanhome/projects">
             <Navbar color={color} changeColor={handleColorChange} />
             <Projects color={color} />
           </Route>
-          <Route path="/">
+          <Route path="/chrispetermanhome">
             <Navbar color={color} changeColor={handleColorChange} />
             <Home color={color} />
           </Route>

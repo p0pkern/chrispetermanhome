@@ -10,21 +10,21 @@ const Navbar = ({ color, changeColor }) => {
                         onMouseEnter={() => changeColor("btn-one")}
                         onMouseLeave={() => changeColor("")}
                         alt="Go to home page"
-                        to="/">Home</Link></li>
+                        to="/chrispetermanhome">Home</Link></li>
             <li><Link className="btn-two" 
                         onClick={() => console.log("hello 2")}
                         style={{backgroundColor: color}}
                         onMouseEnter={() => changeColor("btn-two")}
                         onMouseLeave={() => changeColor("")}
                         alt="A page of three projects"
-                        to="/projects">Projects</Link></li>
+                        to="/chrispetermanhome/projects">Projects</Link></li>
             <li><Link className="btn-three" 
                         onClick={() => console.log("hello 3")}
                         style={{backgroundColor: color}}
                         onMouseEnter={() => changeColor("btn-three")}
                         onMouseLeave={() => changeColor("")}
                         alt="about the author"
-                        to="/about">About</Link></li>
+                        to="/chrispetermanhome/about">About</Link></li>
         </ul>
     )
 }
