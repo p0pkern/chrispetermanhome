@@ -3,10 +3,22 @@ import ProjectItem from "./ProjectItem"
 import homepage from "../../imgs/homepagegif.gif"
 import mybabies from "../../imgs/mybabies.gif"
 import megahive from "../../imgs/megahive.gif"
+import mazeHunter from "../../imgs/mazeHunter.gif"
 
 const ProjectsList = ({color}) => {
     return (
         <ul>
+            <ProjectItem number="4"
+                         title="Maze Hunter"
+                         alt="A Gif of a maze being solved"
+                         description="A maze solving program. The user chooses a start and end point on the grid with the option of adding 'barriers'. After hitting the search algorithm button the Maze Hunter will show every spot it checked and the end point. I wanted to get more familiar with the process of creating a GUI, Tests, and then linking the front and back end with Python. Since I'm TAing a data structures class I wanted to show a visualization of Breadth First Seach and Depth First Search. 
+                                      I also wanted to create a program that could be expanded upon and scalable. With the possibilty of adding more features and search algorithms."
+                         lang1="Python"
+                         lang2="tkinter"
+                         color={color}
+                         github="https://github.com/p0pkern/mazeHunter"
+                         image={mazeHunter}
+            /> 
             <ProjectItem number="1"
                          title="Personal Website" 
                          image={homepage} 
@@ -39,6 +51,7 @@ const ProjectsList = ({color}) => {
                          color={color}
                          github="https://github.com/p0pkern/Mega-Hive"
                          demo="https://p0pkern.github.io/Mega-Hive/"/>
+            
         </ul>
     )
 }

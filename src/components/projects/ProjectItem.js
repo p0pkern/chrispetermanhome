@@ -29,11 +29,11 @@ const ProjectItem = ({ color, number, title, image, alt, description, lang1, lan
                 <div className="icons-container">
                     <div className="icons-titles">
                         <p>Github</p>
-                        <p>Demo</p>
+                        {demo ? <p>Demo</p> : ""}
                     </div>
                     <div className="icons">
                         <a target="_blank" href={github}><AiFillGithub /></a>
-                        <a target="_blank" href={demo}><AiOutlineLink /></a>
+                        {demo ? <a target="_blank" href={demo}><AiOutlineLink /></a> : ""}
                     </div>
                 </div>
 
