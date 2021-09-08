@@ -66,9 +66,9 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2% 10%;
+    margin: 2% 3%;
     padding: 50px;
-    font-size: 4rem;
+    font-size: 4.5rem;
     white-space: nowrap;
 	mix-blend-mode: difference;
 	z-index: 0;

@@ -29,20 +29,21 @@ function App() {
   const [color, setColor] = useState("626D71")
 
   const handleColorChange = (id) => {
-      if (id === "btn-one") {
-      setColor("#626D71");
-      } else if (id === "btn-two") {
-      setColor("#DDBC95");
-      } else if (id === "btn-three") {
-      setColor("#B38867");
-      } 
+      // if (id === "btn-one") {
+      // setColor("#626D71");
+      // } else if (id === "btn-two") {
+      // setColor("#DDBC95");
+      // } else if (id === "btn-three") {
+      // setColor("#B38867");
+      // } 
+      console.log(id)
   }
     
   // Cursor animation
   const cursorX = useMotionValue(-100)
   const cursorY = useMotionValue(-100)
   
-  const springConfig = {damping: 50, stiffness: 400};
+  const springConfig = {damping: 30, stiffness: 1000};
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
