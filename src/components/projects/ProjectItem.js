@@ -2,26 +2,11 @@ import React from "react"
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai"
 
 const ProjectItem = ({ color, number, title, image, alt, description, lang1, lang2, lang3, github, demo }) => {
-        let colorOne = "DDBC95";
-        let colorTwo = "B38867";
-    // Hover Home
-    if (color === "#626D71") {
-        colorOne = "#626D71";
-        colorTwo = "#CDCDCD";
-
-    // Hover Projects
-    } else if (color === "#DDBC95") {
-        colorOne = "#DDBC95";
-        colorTwo = "#B38867";
-
-    // Hover About
-    } else if (color === "#B38867") {
-        colorOne = "#B38867";
-        colorTwo = "#DDBC95";
-    }
+    let colorOne = "#CDCDCD";
+    let colorTwo = "#626D71";
 
     return (
-       <div className="proj-container" style={{backgroundColor: number % 2 === 0 ? colorOne: colorTwo}}>
+       <div className="proj-container" style={{backgroundColor: number % 2 === 0 ? colorTwo: colorOne}}>
         <li>
             <div className="top-portion">
                 <h3 className="item-title">{title}</h3>
