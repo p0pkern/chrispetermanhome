@@ -1,18 +1,24 @@
-# Chris Peterman's Homepage
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-Hello,
+# Portfolio Website of Chris Peterman
 
-I'm Chris Peterman. If you are stumbling on to this Github repository and this website then I have probably applied to your company as a software engineer. This is a site to showcase my abilities and some of the projects I am proud of. I plan to add more and expand on the site as I learn and create more.
+This is a website for hosting my personal projects and a short blurb about myself.
+The technologies used are React.js, React-Router, JavaScript.
 
 ## About the Page
 
-I created the website with React.js. I used react-routes-dom to transition between the pages for an asyncronous single page application, the majority of the functionality is done throug React hooks, and the animations on the homepage are randomly generated and randomly positioned utilizing hooks and CSS.
+### The Home Page
 
-### Contact
+- The main landing page is designed with a large logo in the center and an animation or orbs that float up from the bottom of the page upward.
+- Each of the orbs is generated randomly in size, coloration, and speed of animation. They each float at a random interval from below the footer over the logo and into the top portion, where they disappear and then regenerate.
 
-If you are interested in contacting me my email is
+### The Projects Page
 
-chrispeterman1987@gmail.com
+- Each project is developed as a card with the required information organized and displayed in a list on the projects page. The projects card is designed to be scalable and expandable for any number of projects that I want to display.
+- To add some more depth to displaying the projects I decided the image should be a Gif of the main portion of the projects.
 
-I appreciate you stopping by!
+### The About Page
 
+- This page is a simple static page in order to showcase more about myself.
