@@ -1,5 +1,5 @@
 // Standard imports
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 import {
   BrowserRouter as Router,
@@ -20,24 +20,14 @@ import HomeContainer from "./components/home/HomeContainer"
 import AboutContainer from "./components/about/AboutContainer"
 
 // Projects Page Route Components
-import ProjectsContainer from "./components/projects/ProjectsContainer"
+import ProjectsList from "./components/projects/ProjectsList"
 
 // Navigation.
 import Navbar from "./components/Navbar"
 
 function App() {
-  const [color, setColor] = useState("626D71")
 
-  const handleColorChange = (id) => {
-      // if (id === "btn-one") {
-      // setColor("#626D71");
-      // } else if (id === "btn-two") {
-      // setColor("#DDBC95");
-      // } else if (id === "btn-three") {
-      // setColor("#B38867");
-      // } 
-      console.log(id)
-  }
+  const color = "#626D71"
     
   // Cursor animation
   const cursorX = useMotionValue(-100)
@@ -65,15 +55,15 @@ function App() {
                                       backgroundColor: "white"}}/>
         <Switch>
           <Route path="/chrispetermanhome/about">
-            <Navbar color={color} changeColor={handleColorChange} />
+            <Navbar color={color} />
             <About color={color} />
           </Route>
           <Route path="/chrispetermanhome/projects">
-            <Navbar color={color} changeColor={handleColorChange} />
+            <Navbar color={color} />
             <Projects color={color} />
           </Route>
           <Route path="/chrispetermanhome">
-            <Navbar color={color} changeColor={handleColorChange} />
+            <Navbar color={color} />
             <Home color={color} />
           </Route>
         </Switch>
@@ -91,7 +81,7 @@ function About({color}) {
 }
 
 function Projects({color}) {
-  return <ProjectsContainer color={color}/>
+  return <ProjectsList color={color}/>
 }
 
 export default App;

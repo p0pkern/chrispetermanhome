@@ -1,14 +1,18 @@
 import React from "react"
-import ProjectItem from "./ProjectItem"
+import ProjectCard from "./ProjectCard"
 import homepage from "../../imgs/homepagegif.gif"
 import mybabies from "../../imgs/mybabies.gif"
 import megahive from "../../imgs/megahive.gif"
 import mazeHunter from "../../imgs/mazeHunter.gif"
 
 const ProjectsList = ({color}) => {
+    /**
+     * Imports and creates all the necessary information to generate a project card.
+     * Returns an organized list of project cards for display on the projects page.
+     */
     return (
         <ul>
-            <ProjectItem number="1"
+            <ProjectCard number="1"
                          title="Maze Hunter"
                          alt="A Gif of a maze being solved"
                          description="A maze solving program. The user chooses a start and end point on the grid with the option of adding 'barriers'. After hitting the search algorithm button the Maze Hunter will show every spot it checked and the end point. I wanted to get more familiar with the process of creating a GUI, Tests, and then linking the front and back end with Python. Since I'm TAing a data structures class I wanted to show a visualization of Breadth First Seach and Depth First Search. 
@@ -17,9 +21,8 @@ const ProjectsList = ({color}) => {
                          lang2="tkinter"
                          color={color}
                          github="https://github.com/p0pkern/mazeHunter"
-                         image={mazeHunter}
-            /> 
-            <ProjectItem number="2"
+                         image={mazeHunter}/> 
+            <ProjectCard number="2"
                          title="Personal Website" 
                          image={homepage} 
                          alt="Home screen of my portfolio website"
@@ -30,7 +33,7 @@ const ProjectsList = ({color}) => {
                          color={color}
                          github="https://github.com/p0pkern/chrispetermanhome"
                          demo="/"/>
-            <ProjectItem number="3"
+            <ProjectCard number="3"
                          title="My Babies" 
                          image={mybabies} 
                          alt="A gif of My Babies web game"
@@ -40,7 +43,7 @@ const ProjectsList = ({color}) => {
                          color={color}
                          github="https://github.com/p0pkern/myBabies"
                          demo="https://p0pkern.github.io/myBabies/"/>
-            <ProjectItem number="4"
+            <ProjectCard number="4"
                          title="Mega Hive" 
                          image={megahive}
                          alt="A gif of the endgame of MegaHive"

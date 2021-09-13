@@ -1,6 +1,9 @@
 import React from "react"
 
-const Header = () => {
+/**
+ * The center text of the homepage.
+ */
+const CenterText = () => {
     return (
         <div className="header">
             <h1>Chris Peterman</h1>
@@ -9,4 +12,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default CenterText

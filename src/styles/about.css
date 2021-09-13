@@ -19,9 +19,11 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 150vh;
-    background-color: "#B38867";
+    height: 1000px;
     z-index: 50;
+    background-color: #626D71;
+    border-radius: 10px;
+    box-shadow: 4px 1px 2px black;
 }
 
 img {

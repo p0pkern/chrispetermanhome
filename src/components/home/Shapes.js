@@ -1,11 +1,19 @@
 import React from "react"
-import Shape from "./Shape"
+import Circle from "./Circle"
 
+/**
+ *  Calls the circle JSX a predetermined amount of times and adds them to a list for
+ *  processing.
+ */
 const Shapes = () => {
+
+    let totalShapes = 50
+
     let shapeList = []
-    for (let i=0; i < 50; i++) {
-        shapeList.push(<Shape keyValue={i}/>)
+    for (let i=0; i < totalShapes; i++) {
+        shapeList.push(<Circle shapeNumber={i}/>)
     }
+
     return (
         <ul className="shapes">
             {shapeList.map(circle => circle)}

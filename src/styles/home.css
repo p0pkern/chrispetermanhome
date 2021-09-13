@@ -71,13 +71,13 @@ html, body {
     font-size: 4.5rem;
     white-space: nowrap;
 	mix-blend-mode: difference;
-	z-index: 0;
+	z-index: -1;
 }
 
 .header h1, .header p {
 	vertical-align: middle;
     text-align: center;
-    background-color: transparent;
+    background-color:rgba(#CDCDCD, 0.1);
 }
 
 .header p {

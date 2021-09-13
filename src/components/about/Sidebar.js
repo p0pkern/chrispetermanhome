@@ -2,15 +2,17 @@ import React from "react"
 import me from "../../imgs/me.jpg"
 import { AiOutlineMail, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 
-const Sidebar = ({ color }) => {
-    const email = "chrispeterman1987@gmail.com"
+/**
+ * Contains the content that will be in the sidebar of the about page.
+ * This includes the text, images, and correpsonding links.
+ */
+const Sidebar = () => {
 
     return (
         <>
-            <div className="sidebar"
-                style={{backgroundColor : color}}>
+            <div className="sidebar">
                     <img src={me} alt="This is me, Chris Peterman"></img>
-                <ul style={{backgroundColor : color}}>
+                <ul>
                     <li className="list-title">Location:</li>
                         <li>Brooklyn, NY, 11201
                             <br></br>
@@ -18,11 +20,10 @@ const Sidebar = ({ color }) => {
                         </li>
                         <li className="list-title">Contact:</li>
                         <li><a href="mailto:chrispeterman1987@gmail.com"><AiOutlineMail/></a></li>
-                        <li>chrispeterman1987@gmail.com</li>
                         <li className="list-title">Links:</li>
                         <div className="icon-links">
-                            <li><a target="_blank" href="https://github.com/p0pkern"><AiOutlineGithub/></a>Github</li>
-                            <li><a target="_blank" href="https://www.linkedin.com/in/chris-peterman-464005ba/"><AiOutlineLinkedin/></a>Linkedin</li>
+                            <li><a target="_blank" rel="noreferrer" href="https://github.com/p0pkern"><AiOutlineGithub/></a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/chris-peterman-464005ba/"><AiOutlineLinkedin/></a></li>
                         </div>
                 </ul>
                 
