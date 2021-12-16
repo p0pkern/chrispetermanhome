@@ -22,7 +22,7 @@ import AboutContainer from "./components/about/AboutContainer"
 import ProjectsList from "./components/projects/ProjectsList"
 
 // Navigation.
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar/Navbar"
 
 function App() {
 
