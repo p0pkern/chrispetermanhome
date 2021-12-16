@@ -1,8 +1,8 @@
 import React from "react"
-import CenterText from "./CenterText"
-import Footer from "./Footer"
-import Shapes from "./Shapes"
-import './home.css'
+import Logo from "../Logo/Logo"
+import Footer from "../Footer/Footer"
+import Shapes from "../Shapes/Shapes"
+import "./Home.css"
 
 /**
  * Container object taht produces the homepage. Shapes generates the floating shapes in the background.
@@ -14,8 +14,8 @@ const HomeContainer = ({ color }) => {
     return (
         <div className="container">
             <Shapes />
-            <CenterText color={color} />
-            <Footer color={color} />
+            <Logo  />
+            <Footer />
         </div>
     )
 }

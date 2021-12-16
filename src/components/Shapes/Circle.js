@@ -16,7 +16,7 @@ const Circle = ({shapeNumber}) => {
         Creates a random style component used to assign to the list item that will be the shape.
         The colors are designated on the below theme. 
      */
-    const shapeColorList = ["#626D71", "#DDBC95", "#B38867"] 
+    const shapeColorList = ["#0000FF", "#FF0000", "#FFFF00", "FF6600", "#00FF00", "#6600FF", "#000000", "#FFFFFF"] 
     const size = Math.floor(Math.random() * 100 + 10)
     const styleRandom = {
         left : `${Math.floor(Math.random() * 200)}%`,

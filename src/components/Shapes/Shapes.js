@@ -1,5 +1,6 @@
 import React from "react"
 import Circle from "./Circle"
+import "./Shapes.css"
 
 /**
  *  Calls the circle JSX a predetermined amount of times and adds them to a list for

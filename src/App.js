@@ -10,10 +10,10 @@ import {
 // App page style
 import "./styles/app.css"
 import "./styles/about.css"
-import "./styles/projects.css"
+//import "./styles/projects.css"
 
 // Home Page Route Components
-import HomeContainer from "./components/home/HomeContainer"
+import HomeContainer from "./components/Home/HomeContainer"
 
 // About Page Route Components
 import AboutContainer from "./components/about/AboutContainer"
@@ -72,7 +72,7 @@ function App() {
 }
 
 function Home({color}) {
-  return <HomeContainer color={color}/>
+  return <HomeContainer/>
 }
 
 function About({color}) {
