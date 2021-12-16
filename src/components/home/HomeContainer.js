@@ -2,6 +2,7 @@ import React from "react"
 import CenterText from "./CenterText"
 import Footer from "./Footer"
 import Shapes from "./Shapes"
+import './home.css'
 
 /**
  * Container object taht produces the homepage. Shapes generates the floating shapes in the background.
