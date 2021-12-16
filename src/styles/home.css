@@ -10,56 +10,6 @@ html, body {
     align-content: center;
 }
 
-/* Navbar for Homepage */
-.navlist {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    width: 100%;
-    margin: 0;
-	font-size: 1.2rem;
-	background-color: #626D71;
-	box-shadow: 2px 2px 4px black;
-	z-index: 990;
-}
-
-.navlist li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    padding-right: 100px;
-}
-
-.navlist a {
-	text-decoration: none;
-	padding-right: 100px;
-}
-
-.navlist a:link, .navlist a:visited {
-	color: black;
-}
-
-.navlist li {
-    border-style: none;
-    padding: 10px;
-	padding-left: 40px;
-    margin: 0;
-}
-
-.navlist .btn-one:hover {
-    margin: 0;
-    color: white;
-}
-
-.navlist .btn-two:hover {
-    margin: 0;
-    color: white;
-}
-
-.navlist .btn-three:hover {
-    margin: 0;
-    color: white;
-}
 
 /* Header Styling */
 .header {
