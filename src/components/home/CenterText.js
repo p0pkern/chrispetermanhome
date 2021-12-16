@@ -7,7 +7,7 @@ const CenterText = () => {
     return (
         <div className="header">
             <h1>Chris Peterman</h1>
-            <p>Software Developer</p>
+            <p>Portfolio Website</p>
         </div>
     )
 }

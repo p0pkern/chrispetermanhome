@@ -18,7 +18,10 @@ const Navbar = () => {
             <li><Link   onClick={() => console.log("hello 3")}
                         alt="about the author"
                         to="/chrispetermanhome/about">About</Link></li>
-            <li>Blog</li>
+            <li><Link   onClick={() => console.log("Under construction")}
+                        alt="Authors Blog"
+                        >Blog</Link>
+                        </li>
         </ul>
     )
 }

@@ -12,7 +12,7 @@ const HomeContainer = ({ color }) => {
 
     return (
         <div className="container">
-            <Shapes color={color} />
+            <Shapes />
             <CenterText color={color} />
             <Footer color={color} />
         </div>
