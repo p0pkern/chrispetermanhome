@@ -10,7 +10,6 @@ import {
 // App page style
 import "./styles/app.css"
 import "./styles/about.css"
-import "./styles/home.css"
 import "./styles/projects.css"
 
 // Home Page Route Components
