@@ -9,13 +9,13 @@
     color: gray;
 }
 
-p, h1 {
+.title, .author {
   margin: 0;
   padding: 0;
   mix-blend-mode: difference;
 }
 
-p {
+.author {
   margin-top: -30px;
 
 }

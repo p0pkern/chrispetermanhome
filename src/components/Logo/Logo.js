@@ -7,8 +7,8 @@ import "./Logo.css"
 const Logo = () => {
     return (
         <div className="logo">
-            <h1>Portfolio Website</h1>
-            <p>By Chris Peterman</p>
+            <h1 className="title">Portfolio Website</h1>
+            <p  className="author">By Chris Peterman</p>
         </div>
     )
 }

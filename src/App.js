@@ -56,7 +56,8 @@ function App() {
                                       backgroundColor: "white"}}/>
         <Switch>
           <Route path="/chrispetermanhome/about">
-            <About />
+            <Home />
+            //<About />
           </Route>
           <Route path="/chrispetermanhome/projects">
             <Projects />

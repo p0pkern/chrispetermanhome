@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import { AiFillGithub, AiOutlineLink, AiOutlineVerticalAlignMiddle, AiOutlineVerticalAlignBottom } from "react-icons/ai"
+import {Link} from "react-router-dom"
 
 const ProjectCard = (props) => {
     /* 
@@ -12,7 +13,7 @@ const ProjectCard = (props) => {
      * A link to the Github and Demo of the project if they exist.
     */
     
-    const [expand, setExpand] = useState(true) 
+    const [expand, setExpand] = useState(false) 
     
     const expandCard = () => {
         setExpand(!expand)
@@ -21,17 +22,13 @@ const ProjectCard = (props) => {
     return (
       <div>
       {expand ? 
-       <div className="proj-container" onClick={expandCard} style={{backgroundColor: props.number % 2 !== 0 ? "#FFFFFF": "#F8F0E3"}}>
+       <div className="proj-container" style={{backgroundColor: props.number % 2 !== 0 ? "#FFFFFF": "#F8F0E3"}}>
         <li>
             <div className="top-portion">
                 <h3 className="expand-title" onClick={expandCard}>{props.title}</h3>
                 <div className="icons-container">
-                    <div className="icons-titles">
-                        {props.github ? <p>Github</p> : ""}
-                        {props.demo ? <p>Demo</p> : ""}
-                    </div>
                     <div className="icons">
-                        {props.github ? <a target="_blank"  rel="noreferrer" href={props.github}><AiFillGithub /></a> : ""}
+                        {props.github ?<a target="_blank" rel="noreferrer" href={props.github}><AiFillGithub /></a> : ""}
                         {props.demo ? <a target="_blank" rel="noreferrer" href={props.demo}><AiOutlineLink /></a> : ""}
                     </div>
                 </div>

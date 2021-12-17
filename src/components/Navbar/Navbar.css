@@ -13,7 +13,7 @@
    box-shadow: 2px 2px 3px black;
 }
 
-a {
+.nav-button {
   text-decoration: none;
   font-size: 14pt;
   font-weight: bold;
@@ -25,11 +25,11 @@ a {
   border-radius: 5px;
 }
 
-a:hover {
+.nav-button:hover {
   box-shadow: 2px 2px 3px, -2px -2px 3px white;
   color:black;
 }
 
-a:active {
+nav-button:active {
   box-shadow: none;
 }
