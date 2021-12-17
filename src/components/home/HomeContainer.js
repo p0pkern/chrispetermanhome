@@ -1,6 +1,5 @@
 import React from "react"
 import Logo from "../Logo/Logo"
-import Footer from "../Footer/Footer"
 import Shapes from "../Shapes/Shapes"
 import "./Home.css"
 
@@ -15,7 +14,6 @@ const HomeContainer = ({ color }) => {
         <div className="container">
             <Shapes />
             <Logo  />
-            <Footer />
         </div>
     )
 }

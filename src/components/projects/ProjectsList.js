@@ -4,6 +4,7 @@ import homepage from "../../imgs/homepagegif.gif"
 import mybabies from "../../imgs/mybabies.gif"
 import megahive from "../../imgs/megahive.gif"
 import mazeHunter from "../../imgs/mazeHunter.gif"
+import "./Projects.css"
 
 const ProjectsList = ({color}) => {
     /**

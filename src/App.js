@@ -10,7 +10,6 @@ import {
 // App page style
 import "./styles/app.css"
 import "./styles/about.css"
-//import "./styles/projects.css"
 
 // Home Page Route Components
 import HomeContainer from "./components/Home/HomeContainer"
@@ -19,10 +18,13 @@ import HomeContainer from "./components/Home/HomeContainer"
 import AboutContainer from "./components/about/AboutContainer"
 
 // Projects Page Route Components
-import ProjectsList from "./components/projects/ProjectsList"
+import ProjectsList from "./components/Projects/ProjectsList"
 
 // Navigation.
 import Navbar from "./components/Navbar/Navbar"
+
+// Footer
+import Footer from "./components/Footer/Footer"
 
 function App() {
 
@@ -54,16 +56,13 @@ function App() {
                                       backgroundColor: "white"}}/>
         <Switch>
           <Route path="/chrispetermanhome/about">
-            <Navbar color={color} />
-            <About color={color} />
+            <About />
           </Route>
           <Route path="/chrispetermanhome/projects">
-            <Navbar color={color} />
-            <Projects color={color} />
+            <Projects />
           </Route>
           <Route path="/chrispetermanhome">
-            <Navbar color={color} />
-            <Home color={color} />
+            <Home />
           </Route>
         </Switch>
         </div>
@@ -71,16 +70,34 @@ function App() {
   );
 }
 
-function Home({color}) {
-  return <HomeContainer/>
+function Home() {
+  return (
+    <div>
+       <Navbar />
+       <HomeContainer/>
+       <Footer />
+    </div>
+)
 }
 
-function About({color}) {
-  return <AboutContainer color={color}/>
+function About() {
+  return (
+     <div>
+        <Navbar />
+        <AboutContainer />
+        <Footer />
+     </div>
+  )
 }
 
-function Projects({color}) {
-  return <ProjectsList color={color}/>
+function Projects() {
+  return (
+     <div>
+        <Navbar />
+        <ProjectsList />
+        <Footer />
+     </div>
+  )
 }
 
 export default App;

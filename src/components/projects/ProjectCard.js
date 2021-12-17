@@ -1,8 +1,8 @@
-import React from "react"
-import { AiFillGithub, AiOutlineLink } from "react-icons/ai"
+import React, {useState} from "react"
+import { AiFillGithub, AiOutlineLink, AiOutlineVerticalAlignMiddle, AiOutlineVerticalAlignBottom } from "react-icons/ai"
 
-const ProjectCard = ({number, title, image, alt, description, lang1, lang2, lang3, github, demo }) => {
-    /** 
+const ProjectCard = (props) => {
+    /* 
      * Provides all the formatting to generate an individual card for a project item.
      * Each item will have a number which associates their placement and coloration.
      * A title displayed in the upper left hand corner.
@@ -11,41 +11,55 @@ const ProjectCard = ({number, title, image, alt, description, lang1, lang2, lang
      * A list of the languages used for the project.
      * A link to the Github and Demo of the project if they exist.
     */
+    
+    const [expand, setExpand] = useState(true) 
+    
+    const expandCard = () => {
+        setExpand(!expand)
+    }   
+
     return (
-       <div className="proj-container" style={{backgroundColor: number % 2 === 0 ? "#626D71": "#CDCDCD"}}>
+      <div>
+      {expand ? 
+       <div className="proj-container" onClick={expandCard} style={{backgroundColor: props.number % 2 !== 0 ? "#FFFFFF": "#F8F0E3"}}>
         <li>
             <div className="top-portion">
-                <h3 className="item-title">{title}</h3>
+                <h3 className="item-title" onClick={expandCard}>{props.title}</h3>
                 <div className="icons-container">
                     <div className="icons-titles">
-                        {github ? <p>Github</p> : ""}
-                        {demo ? <p>Demo</p> : ""}
+                        {props.github ? <p>Github</p> : ""}
+                        {props.demo ? <p>Demo</p> : ""}
                     </div>
                     <div className="icons">
-                        {github ? <a target="_blank"  rel="noreferrer" href={github}><AiFillGithub /></a> : ""}
-                        {demo ? <a target="_blank" rel="noreferrer" href={demo}><AiOutlineLink /></a> : ""}
+                        {props.github ? <a target="_blank"  rel="noreferrer" href={props.github}><AiFillGithub /></a> : ""}
+                        {props.demo ? <a target="_blank" rel="noreferrer" href={props.demo}><AiOutlineLink /></a> : ""}
                     </div>
                 </div>
             </div>
 
             <div className="image-desc">
-                <img className="project-img" src={image} alt={alt}></img>
+                <img className="project-img" src={props.image} alt={props.alt}></img>
                 <div className="project-desc">
                     <h4>About</h4>
-                    <p>{description}</p>
+                    <p>{props.description}</p>
                 </div>
                 <div className="languages-used">
                     <div className="languages-used-title">
                         <h4>Languages Used</h4>
                     </div>
-                        {lang1 ? <p>{lang1}</p> : ""}
-                        {lang2 ? <p>{lang2}</p> : ""}
-                        {lang3 ? <p>{lang3}</p> : ""}
+                        {props.lang1 ? <p>{props.lang1}</p> : ""}
+                        {props.lang2 ? <p>{props.lang2}</p> : ""}
+                        {props.lang3 ? <p>{props.lang3}</p> : ""}
                 </div>
            </div>
            
         </li>
+        </div> :
+        <div className="closed-card"  onClick={expandCard} style={{backgroundColor: props.number % 2 !== 0 ? "#FFFFFF": "#F8F0E3"}}>
+           <h3  onClick={expandCard}>{props.title}</h3>
         </div>
+      </div>}
+     </div>
     )
 }
 
