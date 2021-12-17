@@ -1,49 +1,50 @@
-.proj-container {
-    margin-top: 10px;
-    border: 10px;
-    border-bottom: 0px;
-    z-index: 3;
-}
-
-.proj-container p {
-    font-size: 1.2rem;
-}
-
-.item-title {
-    text-align: left;
-    font-size: 3rem;
-    padding: 20px;
-}
-
 .icons-container {
     display: flex;
     flex-direction: column;
 }
 
 .icons-titles {
-    display: flex;
-    flex-direction: row;
-    padding-left: 20px;
-}
-
-.icons-titles p {
-    padding-right: 40px;
-}
-
-.icons svg{
-    width: 50px;
-    height: 50px;
-    padding: 0 20px;
     color: black;
+    padding: 0;
+    margin: 0;
+
 }
 
-.icons {
-    display: flex;
-    flex-direction: row;
+.closed-card {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 3px black;
 }
 
-.icons svg:hover {
-    color: white;
+.closed-card:hover {
+   height: 100px;
+   line-height: 100px;    
+}
+
+.closed-card-title {
+    text-align: left;
+    font-size: 3em;
+}
+
+.proj-container {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+}
+
+.expand-title {
+    text-align: left;
+    font-size: 3em;
+    padding: 10px;
+    margin: 0;
 }
 
 .top-portion {
@@ -51,37 +52,7 @@
     flex-direction: row;
 }
 
-.image-desc {
-    display: flex;
-    flex-direction: row;
-}
-
-.project-img {
-    margin: 0;
-    padding: 10px;
-    padding-bottom: 20px;
-    width: 300px;
-    border: 5px solid black;
-    height: 200px;
-    margin: 10px;
-    margin-top: 0;
-}
-
-.project-desc {
-    padding-left: 2%;
-    width: 40%;
-}
-
-.project-desc h4 {
-    font-size: 1.5rem;
-}
-
-.languages-used-title {
-    font-size: 1.5rem;
-    white-space: nowrap;
-}
-
-.languages-used {
-    width: 30%;
-    padding-left: 2%;
+svg {
+  width: 50px;
+  height: 50px;
 }

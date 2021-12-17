@@ -9,7 +9,7 @@ import {
 
 // App page style
 import "./styles/app.css"
-import "./styles/about.css"
+//import "./styles/about.css"
 
 // Home Page Route Components
 import HomeContainer from "./components/Home/HomeContainer"
@@ -85,7 +85,6 @@ function About() {
      <div>
         <Navbar />
         <AboutContainer />
-        <Footer />
      </div>
   )
 }
@@ -95,7 +94,6 @@ function Projects() {
      <div>
         <Navbar />
         <ProjectsList />
-        <Footer />
      </div>
   )
 }

@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
        <div className="proj-container" onClick={expandCard} style={{backgroundColor: props.number % 2 !== 0 ? "#FFFFFF": "#F8F0E3"}}>
         <li>
             <div className="top-portion">
-                <h3 className="item-title" onClick={expandCard}>{props.title}</h3>
+                <h3 className="expand-title" onClick={expandCard}>{props.title}</h3>
                 <div className="icons-container">
                     <div className="icons-titles">
                         {props.github ? <p>Github</p> : ""}
@@ -56,8 +56,7 @@ const ProjectCard = (props) => {
         </li>
         </div> :
         <div className="closed-card"  onClick={expandCard} style={{backgroundColor: props.number % 2 !== 0 ? "#FFFFFF": "#F8F0E3"}}>
-           <h3  onClick={expandCard}>{props.title}</h3>
-        </div>
+           <h3 className="closed-card-title"  onClick={expandCard}>{props.title}</h3>
       </div>}
      </div>
     )
