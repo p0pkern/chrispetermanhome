@@ -57,7 +57,6 @@ function App() {
         <Switch>
           <Route path="/chrispetermanhome/about">
             <Home />
-            //<About />
           </Route>
           <Route path="/chrispetermanhome/projects">
             <Projects />
