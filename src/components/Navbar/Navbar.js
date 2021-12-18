@@ -17,15 +17,6 @@ const Navbar = () => {
                         className="nav-button"
                         alt="A page of three projects"
                         to="/chrispetermanhome/projects">Projects</Link></li>
-            <li><Link   onClick={() => console.log("hello 3")}
-                        className="nav-button"
-                        alt="about the author"
-                        to="/chrispetermanhome/about">About</Link></li>
-            <li><Link   onClick={() => console.log("Under construction")}
-                        className="nav-button"
-                        alt="Authors Blog"
-                        >Blog</Link>
-                        </li>
         </ul>
     )
 }
