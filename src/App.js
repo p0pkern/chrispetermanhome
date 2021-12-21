@@ -9,13 +9,9 @@ import {
 
 // App page style
 import "./styles/app.css"
-//import "./styles/about.css"
 
 // Home Page Route Components
 import HomeContainer from "./components/Home/HomeContainer"
-
-// About Page Route Components
-import AboutContainer from "./components/about/AboutContainer"
 
 // Projects Page Route Components
 import ProjectsList from "./components/Projects/ProjectsList"
@@ -55,9 +51,6 @@ function App() {
           <motion.div className="cursor" style={{translateX: cursorXSpring, translateY: cursorYSpring,
                                       backgroundColor: "white"}}/>
         <Switch>
-          <Route path="/chrispetermanhome/about">
-            <Home />
-          </Route>
           <Route path="/chrispetermanhome/projects">
             <Projects />
           </Route>
@@ -80,14 +73,6 @@ function Home() {
 )
 }
 
-function About() {
-  return (
-     <div>
-        <Navbar />
-        <AboutContainer />
-     </div>
-  )
-}
 
 function Projects() {
   return (
